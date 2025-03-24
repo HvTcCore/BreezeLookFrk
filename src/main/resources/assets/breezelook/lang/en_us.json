@@ -1,0 +1,5 @@
+{
+  "breezelook.add": "Point \"%s\" added.",
+  "breezelook.remove": "Point \"%s\" deleted.",
+  "breezelook.reload": "Config reloaded."
+}
