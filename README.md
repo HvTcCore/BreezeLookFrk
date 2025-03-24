@@ -4,9 +4,9 @@ Mod made for wireless redstone mechanism based on breezes and player's view dire
 ## Commands
 | Command | Description |
 | --- | --- |
-| /look add <name> <horizontal> <vertical> | Add direction point |
-| /look remove <name> | Remove direction point |
-| /look warp <name> | Points the camera at a point |
+| /look add \<name\> \<horizontal\> \<vertical\> | Add direction point |
+| /look remove \<name\> | Remove direction point |
+| /look warp \<name\> | Points the camera at a point |
 | /look reload | Reload config |
 
 ## Config
