@@ -20,3 +20,5 @@ Mod made for wireless redstone mechanism based on breezes and player's view dire
 | return-camera-to-direction | false |
 | return-camera-to-horizontal | 0.0 |
 | return-camera-to-vertical | 0.0 |
+
+https://modrinth.com/user/TheFogIOF
