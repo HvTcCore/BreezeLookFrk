@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.text.Text;
+import sk.breezelook.utills.PointsSuggestionProvider;
 
 import static sk.breezelook.Main.savePoints;
 
@@ -30,7 +31,7 @@ public class Command {
                 .then(ClientCommandManager.literal("warp")
                         .then(ClientCommandManager.argument("name", StringArgumentType.word())
                                 .suggests(new PointsSuggestionProvider())
-                                .executes(Command::tpCommand)
+                                .executes(Command::warpCommand)
                         ))
                 .then(ClientCommandManager.literal("reload")
                         .executes(Command::reloadCommand)
@@ -39,7 +40,7 @@ public class Command {
     }
 
     private static int reloadCommand(CommandContext<FabricClientCommandSource> context) {
-        Main.config.readConfig();
+        ModConfig.readConfig();
         savePoints();
         context.getSource().sendFeedback(Text.translatable("breezelook.reload"));
         return 1;
@@ -65,14 +66,15 @@ public class Command {
         return 1;
     }
 
-    private static int tpCommand(CommandContext<FabricClientCommandSource> context)
+    private static int warpCommand(CommandContext<FabricClientCommandSource> context)
     {
         String pointName = StringArgumentType.getString(context, "name");
+        if (!Main.points.containsKey(pointName)) return 1;
         Main.LookDirection direction = Main.points.get(pointName);
         Main.oldDirection = new Main.LookDirection(context.getSource().getClient().player.getYaw(), context.getSource().getClient().player.getPitch());
         context.getSource().getClient().player.setYaw(direction.horizontal());
         context.getSource().getClient().player.setPitch(direction.vertical());
-        commandUsed = true;
+        if (ModConfig.INSTANCE.confirm) commandUsed = true;
         return 1;
     }
 }

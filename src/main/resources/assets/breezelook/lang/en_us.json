@@ -1,5 +1,25 @@
 {
   "breezelook.add": "Point \"%s\" added.",
   "breezelook.remove": "Point \"%s\" deleted.",
-  "breezelook.reload": "Config reloaded."
+  "breezelook.reload": "Config reloaded.",
+  "breezelook.gui.config": "Configuration",
+  "text.autoconfig.breezelook/config.title": "Breeze Look",
+  "text.autoconfig.breezelook/config.option.confirm": "Direction Confirm",
+  "text.autoconfig.breezelook/config.option.confirmDelay": "Confirm Delay (in ticks)",
+  "text.autoconfig.breezelook/config.option.confirmHorizontal": "Confirm Horizontal",
+  "text.autoconfig.breezelook/config.option.confirmVertical": "Confirm Vertical",
+  "text.autoconfig.breezelook/config.option.returnCamera": "Return Camera",
+  "text.autoconfig.breezelook/config.option.returnCameraDelay": "Return Camera Delay (in ticks)",
+  "text.autoconfig.breezelook/config.option.returnCameraToDirection": "Return Camera To Direction",
+  "text.autoconfig.breezelook/config.option.returnCameraHorizontal": "Return Camera Horizontal",
+  "text.autoconfig.breezelook/config.option.returnCameraVertical": "Return Camera Vertical",
+  "text.autoconfig.breezelook/config.option.confirm.@Tooltip": "If true, then after the camera is directed to the point, the camera will be rotated to the 2nd point for confirmation.",
+  "text.autoconfig.breezelook/config.option.confirmDelay.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.confirmHorizontal.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.confirmVertical.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.returnCamera.@Tooltip": "If true, then after the camera is rotated to the 2nd point for confirmation, the camera will rotate to the original camera position.",
+  "text.autoconfig.breezelook/config.option.returnCameraDelay.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.returnCameraToDirection.@Tooltip": "If true, then after the camera is rotated to the 2nd point for confirmation, the camera will rotate to the custom camera position.",
+  "text.autoconfig.breezelook/config.option.returnCameraHorizontal.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.returnCameraVertical.@Tooltip": ""
 }

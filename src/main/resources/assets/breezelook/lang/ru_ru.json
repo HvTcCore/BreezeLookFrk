@@ -1,5 +1,25 @@
 {
   "breezelook.add": "Метка \"%s\" добавлена.",
   "breezelook.remove": "Метка \"%s\" удалена.",
-  "breezelook.reload": "Конфиг перезагружен."
+  "breezelook.reload": "Конфиг перезагружен.",
+  "breezelook.gui.config": "Конфигурация",
+  "text.autoconfig.breezelook/config.title": "Breeze Look",
+  "text.autoconfig.breezelook/config.option.confirm": "Подтверждение направления",
+  "text.autoconfig.breezelook/config.option.confirmDelay": "Задержка до подтверждения (в тиках)",
+  "text.autoconfig.breezelook/config.option.confirmHorizontal": "Горизонтальное направление подтверждения",
+  "text.autoconfig.breezelook/config.option.confirmVertical": "Вертикальное направление подтверждения",
+  "text.autoconfig.breezelook/config.option.returnCamera": "Вернуть камеру",
+  "text.autoconfig.breezelook/config.option.returnCameraDelay": "Задержка до возврата камеры (в тиках)",
+  "text.autoconfig.breezelook/config.option.returnCameraToDirection": "Вернуть камеру на кастомное направление",
+  "text.autoconfig.breezelook/config.option.returnCameraHorizontal": "Горизонтальное направление возврата камеры",
+  "text.autoconfig.breezelook/config.option.returnCameraVertical": "Вертикальное направление возврата камеры",
+  "text.autoconfig.breezelook/config.option.confirm.@Tooltip": "Если значение true, то после того, как камера будет направлена на указанную точку, она будет повернута во 2-ю точку для подтверждения.",
+  "text.autoconfig.breezelook/config.option.confirmDelay.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.confirmHorizontal.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.confirmVertical.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.returnCamera.@Tooltip": "Если значение true, то после того, как камера будет повернута во 2-ю точку для подтверждения, камера повернётся на изначальное положение камеры.",
+  "text.autoconfig.breezelook/config.option.returnCameraDelay.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.returnCameraToDirection.@Tooltip": "Если значение true, то после того, как камера будет повернута во 2-ю точку для подтверждения, камера повернётся на кастомное положение камеры.",
+  "text.autoconfig.breezelook/config.option.returnCameraHorizontal.@Tooltip": "",
+  "text.autoconfig.breezelook/config.option.returnCameraVertical.@Tooltip": ""
 }

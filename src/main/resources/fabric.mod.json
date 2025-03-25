@@ -12,6 +12,9 @@
   "entrypoints": {
     "client": [
       "sk.breezelook.Main"
+    ],
+    "modmenu": [
+      "sk.breezelook.compat.ModMenuCompat"
     ]
   },
   "mixins": [
