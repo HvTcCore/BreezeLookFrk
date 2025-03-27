@@ -34,10 +34,4 @@ public class ModConfig implements ConfigData {
     public boolean returnCamera = true;
     @ConfigEntry.Gui.Tooltip()
     public int returnCameraDelay = 60;
-    @ConfigEntry.Gui.Tooltip()
-    public boolean returnCameraToDirection = false;
-    @ConfigEntry.Gui.Tooltip()
-    public float returnCameraHorizontal = 0;
-    @ConfigEntry.Gui.Tooltip()
-    public float returnCameraVertical = 0;
 }

@@ -2,6 +2,7 @@
   "breezelook.add": "Метка \"%s\" добавлена.",
   "breezelook.remove": "Метка \"%s\" удалена.",
   "breezelook.reload": "Конфиг перезагружен.",
+  "breezelook.add_chamber": "Точка для пёрл чембера добавлена.",
   "breezelook.gui.config": "Конфигурация",
   "text.autoconfig.breezelook/config.title": "Breeze Look",
   "text.autoconfig.breezelook/config.option.confirm": "Подтверждение направления",
@@ -17,9 +18,6 @@
   "text.autoconfig.breezelook/config.option.confirmDelay.@Tooltip": "",
   "text.autoconfig.breezelook/config.option.confirmHorizontal.@Tooltip": "",
   "text.autoconfig.breezelook/config.option.confirmVertical.@Tooltip": "",
-  "text.autoconfig.breezelook/config.option.returnCamera.@Tooltip": "Если значение true, то после того, как камера будет повернута во 2-ю точку для подтверждения, камера повернётся на изначальное положение камеры.",
-  "text.autoconfig.breezelook/config.option.returnCameraDelay.@Tooltip": "",
-  "text.autoconfig.breezelook/config.option.returnCameraToDirection.@Tooltip": "Если значение true, то после того, как камера будет повернута во 2-ю точку для подтверждения, камера повернётся на кастомное положение камеры.",
-  "text.autoconfig.breezelook/config.option.returnCameraHorizontal.@Tooltip": "",
-  "text.autoconfig.breezelook/config.option.returnCameraVertical.@Tooltip": ""
+  "text.autoconfig.breezelook/config.option.returnCamera.@Tooltip": "Если значение true, то после того, как камера будет повернута во 2-ю точку для подтверждения, камера повернётся на нулевое положение камеры.",
+  "text.autoconfig.breezelook/config.option.returnCameraDelay.@Tooltip": ""
 }

@@ -16,7 +16,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main implements ClientModInitializer {
@@ -28,7 +30,7 @@ public class Main implements ClientModInitializer {
     private static final Gson gson = new Gson();
     private static final File points_config = new File(FabricLoader.getInstance().getConfigDir().toFile(), "breezelook/points.json");
 
-    public static LookDirection oldDirection;
+    public static LookDirection lookDirection;
 
     private int tick;
 
@@ -71,14 +73,8 @@ public class Main implements ClientModInitializer {
                 client.player.setYaw(ModConfig.INSTANCE.confirmHorizontal);
                 client.player.setPitch(ModConfig.INSTANCE.confirmVertical);
                 if (ModConfig.INSTANCE.returnCamera && (tick > ModConfig.INSTANCE.confirmDelay + ModConfig.INSTANCE.returnCameraDelay)) {
-                    if (ModConfig.INSTANCE.returnCameraToDirection) {
-                        client.player.setYaw(ModConfig.INSTANCE.returnCameraHorizontal);
-                        client.player.setPitch(ModConfig.INSTANCE.returnCameraVertical);
-                    }
-                    else {
-                        client.player.setYaw(oldDirection.horizontal);
-                        client.player.setPitch(oldDirection.vertical);
-                    }
+                    client.player.setYaw(lookDirection.chamberHorizontal());
+                    client.player.setPitch(lookDirection.chamberVertical());
                     Command.commandUsed = false;
                     tick = 0;
                 }
@@ -91,5 +87,5 @@ public class Main implements ClientModInitializer {
         }
     }
 
-    public record LookDirection(float horizontal, float vertical) {}
+    public record LookDirection(float horizontal, float vertical, float chamberHorizontal, float chamberVertical) {}
 }
